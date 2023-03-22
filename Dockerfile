@@ -1,5 +1,5 @@
 # Stage 1:  React 
-FROM node:14-alpine as build-react
+FROM node:18-alpine as build-react
 WORKDIR /app/frontend
 COPY ./frontend/package.json ./
 RUN npm install
