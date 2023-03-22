@@ -1,3 +1,8 @@
+FROM node:14-alpine as build-react
+WORKDIR /app/frontend
+COPY ./frontend/package.json ./
+RUN npm install
+COPY . .
 
 FROM python:3.9-alpine as build-django
 WORKDIR /app
