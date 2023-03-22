@@ -1,7 +1,9 @@
-#Author: Sanjay Das
 
 # Use an official Python runtime as a parent image
 FROM python:3.9.16-alpine
+
+#maintainer_name
+LABEL maintainer_name="SanjayDas"
 
 # Set the working directory to /app
 WORKDIR /app
