@@ -1,4 +1,11 @@
+#Docker commands for Frontend
+FROM node:18.15
+WORKDIR /app
+COPY ./frontend/package.json /app
+RUN npm install
+EXPOSE 3000
 
+#Docker commands for Backend
 # Use an official Python runtime as a parent image
 FROM python:3.9.16-alpine
 
