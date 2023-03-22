@@ -4,7 +4,6 @@ WORKDIR /app/frontend
 COPY ./frontend/package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build
 
 # Stage 2: Build Django App
 FROM python:3.9-alpine as build-django
